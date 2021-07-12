@@ -1,4 +1,5 @@
 {% set branch = "master" %}
+{% set version = "1" %}
 
 package:
   name: gnuradio
@@ -6,7 +7,6 @@ package:
 
 source:
   url: https://github.com/gnuradio/gnuradio/archive/refs/heads/{{ branch }}.tar.gz
-  sha256: d7271022559bfb486a9462ed5e7d1ffb52a010a197f5dfdef27f70a931907dce
   patches:
     - 0001-cmake-Install-python-wrapper-exe-for-scripts-on-Wind.patch
     - 0002-cmake-Don-t-generate-.pyc-and-.pyo-files.patch
